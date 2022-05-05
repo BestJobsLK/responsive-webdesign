@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta charset="UTF-8">
+	<title>Responsive Images</title>
+	<style>
+		.container { width: 1000px; margin: 0 auto; }
+		img { width: 100%; }
+
+		@media screen and (max-width: 1000px) {
+			.container { width: 100%; }
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<picture>
+			<source media="(max-width: 600px)" srcset="img/mobile.jpg">
+			<source media="(max-width: 800px)" srcset="img/tablet.jpg">
+			<img src="img/desktop.jpg" alt="">
+		</picture>
+	</div>
+</body>
+</html>

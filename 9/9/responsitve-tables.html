@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta charset="UTF-8">
+	<title>Responsive Tables</title>
+	<style>
+		body { font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; }
+		table { border-collapse: collapse; width: 100%; }
+		th { background: #ddd; border-top: 1px solid #eee; }
+		td, th  { padding: 5px 10px; border-bottom: 1px solid #aaa; }
+		th:nth-child(1) { text-align: left; }
+		th:nth-child(3), td:nth-child(3) { text-align: right; }
+		th:nth-child(4), td:nth-child(4) { text-align: right; }
+		th:nth-child(5), td:nth-child(5) { text-align: right; }
+		th:nth-child(6), td:nth-child(6) { text-align: right; }
+		th:nth-child(7), td:nth-child(7) { text-align: right; }
+		th:nth-child(8), td:nth-child(8) { text-align: right; }
+
+		@media screen and (max-width: 800px) {
+			th:nth-child(5), td:nth-child(5) { display: none; }
+			th:nth-child(8), td:nth-child(8) { display: none; }
+		}
+
+		@media screen and (max-width: 500px) {
+			.scorecard { overflow-x: auto }
+			table { width: 600px; }
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<h1>Scorecard</h1>
+		<p>Nihil quam, suscipit dolores labore aspernatur illo sunt necessitatibus recusandae, sequi? Eos voluptas saepe molestias iure corporis, deserunt, nulla natus modi rerum, voluptates laboriosam illum expedita recusandae! Voluptates, eos omnis.</p>
+		<div class="scorecard">
+			<table>
+				<tr>
+					<th>BATSMEN</th>
+					<th></th>
+					<th>R</th>
+					<th>B</th>
+					<th>M</th>
+					<th>4s</th>
+					<th>6s</th>
+					<th>SR</th>
+				</tr>
+				<tr>
+					<td>ST Jayasuriya</td>
+					<td>run out</td>
+					<td>9</td>
+					<td>7</td>
+					<td>9</td>
+					<td>1</td>
+					<td>0</td>
+					<td>128.57</td>
+				</tr>
+				<tr>
+					<td>RS Kaluwitharana †</td>
+					<td>c Bevan b Fleming</td>
+					<td>6</td>
+					<td>13</td>
+					<td>27</td>
+					<td>0</td>
+					<td>0</td>
+					<td>46.15</td>
+				</tr>
+				<tr>
+					<td>AP Gurusinha</td>
+					<td>b Reiffel</td>
+					<td>65</td>
+					<td>99</td>
+					<td>119</td>
+					<td>6</td>
+					<td>1</td>
+					<td>65.65</td>
+				</tr>
+				<tr>
+					<td>PA de Silva</td>
+					<td>not out</td>
+					<td>107</td>
+					<td>124</td>
+					<td>176</td>
+					<td>13</td>
+					<td>0</td>
+					<td>86.29</td>
+				</tr>
+				<tr>
+					<td>A Ranatunga (c)</td>
+					<td>not out</td>
+					<td>47</td>
+					<td>37</td>
+					<td>72</td>
+					<td>4</td>
+					<td>1</td>
+					<td>127.02</td>
+				</tr>
+				<tr>
+					<td>Extras</td>
+					<td></td>
+					<td colspan="6">11 (b 1, lb 4, nb 1, w 5)</td>
+				</tr>
+				<tr>
+					<td>TOTAL</td>
+					<td></td>
+					<td colspan="6">245/3 (46.2 Overs, RR: 5.28)</td>
+				</tr>
+			</table>
+		</div>	
+	</div>
+	
+</body>
+</html>

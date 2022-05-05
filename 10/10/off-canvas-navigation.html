@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta charset="UTF-8">
+	<title>Off Canvas Responsive Navigation</title>
+	<style>
+		nav {
+			position: absolute;
+			top: 0;
+			left: 0;
+			background: white;
+			width: 100%;
+			height: 100%;
+			display: none;
+			text-align: center;
+		}
+
+		a.menu { display: none; }
+
+		@media screen and (max-width: 500px) {
+			a.menu { display: inline-block; }
+ 		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<header>
+			<a href="#" class="menu">MENU</a>
+			<h1>Company Logo</h1>
+		</header>
+
+		<nav>
+			<h4>MENU</h4>
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">About Us</a></li>
+				<li><a href="#">Products</a></li>
+				<li><a href="#">Services</a></li>
+				<li><a href="#">Contact Us</a></li>
+			</ul>
+			<a href="#" class="close">Close Menu</a>
+		</nav>
+
+		<article>
+			<h2>Article Heading</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium eos architecto numquam ab, quisquam doloremque similique. Dignissimos repellat, mollitia aliquid accusamus ipsum molestias voluptatem quo distinctio! Pariatur, earum nulla debitis.</p>
+			<p>Aliquam, distinctio. Accusamus voluptates cum autem voluptas eaque in ratione, blanditiis adipisci voluptatibus quia dolor libero, maiores non iste consectetur recusandae. Voluptates sed adipisci nisi, voluptatum totam necessitatibus debitis aspernatur!</p>
+			<p>Eaque sit officiis corporis libero, a delectus aut. Facere optio sit velit, a, ipsa quis enim! Quis officia debitis recusandae rerum quidem provident! Deserunt labore aut libero, rerum quos impedit.</p>
+			<p>Dignissimos molestias laborum, cupiditate non qui architecto veniam nesciunt quisquam odio autem quasi dolorem voluptatum enim quas cum optio, in maxime voluptate pariatur magni amet laudantium nulla fugiat facere! Iste.</p>
+			<p>Perspiciatis ab porro expedita, aliquid rerum dolore iure quasi qui aperiam alias molestiae maiores minima, officiis labore veritatis quidem, modi! Officia similique ipsa quisquam commodi error, voluptatum est, laborum velit?</p>
+		</article>
+
+
+	</div>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$('.menu').click(function(){
+				$('nav').show();
+			});
+
+			$('.close').click(function(){
+				$('nav').hide();
+			});
+		});
+	</script>
+</body>
+</html>

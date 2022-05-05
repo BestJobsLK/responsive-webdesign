@@ -1,0 +1,35 @@
+* { margin: 0; padding: 0; box-sizing: border-box;}
+
+body { font: 16px Arial, "Helvetica Neue", Helvetica, sans-serif; }
+
+a { text-decoration: none; }
+p { margin-bottom: 15px; line-height: 150%; color: #444; }
+
+.container { width: 1000px; margin: 0 auto; display: flex; flex-wrap: wrap }
+
+header { width: 1000px; background: #ffcc00; }
+header h1 { padding: 20px; font: 40px "Times New Roman", Times, Baskerville, Georgia, serif;  }
+
+aside { width: 250px; float: left; }
+
+article { width: 750px; float: right; border-left: 1px solid #eee; padding: 20px; }
+
+
+aside h3 { margin-top: 10px; padding: 15px; background: #b2c3d5; border: 1px dashed #ddd; text-transform: uppercase; }
+aside ul { list-style: none }
+aside ul li a { display: block; padding: 15px; border-bottom: 1px solid #eee;}
+aside ul li a:hover { background: #f7f7f7;}
+aside ul li a.active { font-weight: bold;}
+
+article h2 { margin-bottom: 15px; font: 60px "Times New Roman", Times, Baskerville, Georgia, serif; letter-spacing: -3px; color: #333452 }
+
+@media screen and (max-width: 1000px) {
+	.container { width: 100%; }
+	aside { width: 25%; }
+	article { width: 75%; }
+}
+
+@media screen and (max-width: 600px) {
+	aside { width: 100%; order: 2; }
+	article { width: 100%; order: 1; }
+}
